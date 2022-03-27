@@ -11,4 +11,15 @@ Endpoint - https://dev.woidzero.xyz/twaddle/api
 <br>
 Example: `base64_encode(json_encode({"some": "dict}));`
 <br><br>
-**Req's json dictionary have 3 fields: `username`, `password` and `device_name`**
+# Authorization
+
+**GET /auth/login.php**
+<br>
+Request data:
+<br>
+`{'username': 'mike', 'password':'qwer123', 'device_name':'MIKES_DESKTOP'}`
+
+Response:
+<br>
+`{'token': 'iewiri.121fweipwfoq', 'device_id':'451293'}`<br>
+device_id and token need to be saved!
