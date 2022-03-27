@@ -9,7 +9,7 @@ Endpoint - https://dev.woidzero.xyz/twaddle/api
 `"encrypted"` - is JSON-ed dictionary with fields and encoded to Base64.
 <br>
 <br>
-Example: `base64_encode(json_encode({"some": "dict}));`
+Example: `base64_encode(json_encode({"some": "dict"}));`
 <br><br>
 # Authorization
 
