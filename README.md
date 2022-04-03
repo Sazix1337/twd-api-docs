@@ -94,15 +94,14 @@ if __name__ == "__main__":
 ```
 On Node.JS:
 ```js
-import WebSocket from 'ws';
-
-const ws = new WebSocket('ws://127.0.0.1:8765');
+const WebSocket = require('ws')
+const ws = new WebSocket('ws://127.0.0.1:8765')
 
 ws.on('open', function open() {
-  ws.send(JSON.stringify({'token':'super secret Twaddle token'}));
-});
+  ws.send(JSON.stringify({'token':'super secret Twaddle token'}))
+})
 
 ws.on('message', function message(data) {
-  console.log('received: %s', data);
-});
+  console.log('received: %s', data)
+})
 ```
