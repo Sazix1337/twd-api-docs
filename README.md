@@ -1,6 +1,6 @@
 # Twaddle API Docs
 For the first you need a knowledge about JSON-format, Cyclic-XORring, and Base64.<br>
-Main Endpoint - http://176.113.82.87:5000
+Main Endpoint - http://176.113.82.87:5000<br>
 WebSockets Endpoint - http://176.113.82.87:8765
 
 **All data requests in JSON-format:**
