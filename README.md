@@ -15,10 +15,10 @@ r = requests.post(url, json=fields_or_idk)
 <br>
 Fields:<br>
 ```py
-username - your Twaddle username
-password - your super secret password
+username = "your Twaddle username"
+password = "your super secret password"
 ```
 Returns:<br>
 ```py
-token - your super secret Twaddle Access-Token
+token = "your super secret Twaddle Access-Token"
 ```
