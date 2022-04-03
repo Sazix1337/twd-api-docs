@@ -1,25 +1,23 @@
 # Twaddle API Docs
-For the first you need a knowledge about JSON-format, and Base64.<br>
-Endpoint - https://dev.woidzero.xyz/twaddle/api
-<br>
-# All request contains:
-**GET**<br>
-`endpoint` + `method_name?req=` + `encrypted`<br><br>
-**How it works?**<br>
-`"encrypted"` - is JSON-ed dictionary with fields and encoded to Base64.
-<br>
-<br>
-Example: `base64_encode(json_encode({"some": "dict"}));`
-<br><br>
-# Authorization
+For the first you need a knowledge about JSON-format, Cyclic-XORring, and Base64.<br>
+Endpoint - http://176.113.82.87:5000
 
-**GET /auth/login.php**
+**All data requests in JSON-format:**<br>
+```import requests
+r = requests.post(url, json=fields_or_idk)
+```
 <br>
-Request data:
 <br>
-`{'username': 'mike', 'password':'qwer123', 'device_name':'MIKES_DESKTOP'}`
-
-Response:
+# API Methods
 <br>
-`{'token': 'iewiri.121fweipwfoq', 'device_id':'451293'}`<br>
-device_id and token need to be saved!
+**POST /api/login**
+<br>
+Fields:<br>
+```
+username - your Twaddle username
+password - your super secret password
+```
+Returns:<br>
+```
+token - your super secret Twaddle Access-Token
+```
