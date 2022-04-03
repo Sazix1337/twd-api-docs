@@ -71,6 +71,7 @@ status = "message_sent" # YAAASSSSS
 
 # WebSocket Endpoint API
 
+Need for listening events, such as new messages, dialogs etc.<br>
 That's simple af
 
 Here is the code example on Python:
