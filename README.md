@@ -13,7 +13,7 @@ r = requests.post(url, json=fields_or_idk)
 # API Methods
 
 
-**POST /api/accounts.login**
+**POST /api/accounts.login** `main endpoint`
 
 Fields:
 
@@ -29,7 +29,7 @@ token = "your super secret Twaddle Access-Token"
 
 
 
-**POST /api/messages.createDialog**
+**POST /api/messages.createDialog** `main endpoint`
 
 Fields:
 
@@ -46,7 +46,7 @@ status = "dialog_created" # YAAASSSSS
 
 
 
-**POST /api/messages.send**
+**POST /api/messages.send** `main endpoint`
 
 Fields:
 
