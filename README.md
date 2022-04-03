@@ -10,7 +10,7 @@ r = requests.post(url, json=fields_or_idk)
 ```
 
 
-# API Methods
+# Main endpoint API Methods
 
 
 **POST /api/accounts.login** `main endpoint`
@@ -67,4 +67,27 @@ Returns:
 
 ```py
 status = "message_sent" # YAAASSSSS
+```
+
+# WebSocket Endpoint API
+
+That's simple af
+
+Here is the code example on Python:
+
+```python
+import asyncio
+import websockets
+import json
+
+async def hello():
+    uri = "ws://127.0.0.1:8765"
+    async with websockets.connect(uri) as websocket:
+        await websocket.send(json.dumps({'token':'super secret Twaddle token'}))
+        while True:
+            data = json.loads(await websocket.recv())
+            print(data)
+if __name__ == "__main__":
+    asyncio.run(hello())
+
 ```
