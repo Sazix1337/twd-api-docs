@@ -51,6 +51,8 @@ status = "dialog_created" # YAAASSSSS
 Fields:
 
 ```py
+import base64
+import itertools
 def encrypt(inp:str, key:str):
     xorred = ("").join(chr(ord(x) ^ ord(y)) for x, y in zip(inp, itertools.cycle(key)))
     return base64.b64encode(xorred.encode()).decode()
