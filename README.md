@@ -85,7 +85,7 @@ async def hello():
     async with websockets.connect(uri) as websocket:
         await websocket.send(json.dumps({'token':'super secret Twaddle token'}))
         while True:
-            data = json.loads(await websocket.recv())
+            data = json.loads(await websocket.recv()) # Here is your data :)
             print(data)
 if __name__ == "__main__":
     asyncio.run(hello())
